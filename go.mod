@@ -3,6 +3,12 @@ module github.com/pjberry16/spin-kube
 go 1.25.1
 
 require (
+	github.com/fatih/color v1.18.0
+	github.com/spinnaker/spin v1.30.0
+	github.com/urfave/cli/v3 v3.4.1
+)
+
+require (
 	cloud.google.com/go/compute v1.7.0 // indirect
 	github.com/Masterminds/goutils v1.1.1 // indirect
 	github.com/Masterminds/semver/v3 v3.1.1 // indirect
@@ -11,8 +17,6 @@ require (
 	github.com/antihax/optional v1.0.0 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/bgentry/speakeasy v0.1.0 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
-	github.com/fatih/color v1.18.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
@@ -27,14 +31,9 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/posener/complete v1.2.3 // indirect
-	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
-	github.com/spinnaker/spin v1.30.0 // indirect
-	github.com/urfave/cli/v2 v2.27.7 // indirect
-	github.com/urfave/cli/v3 v3.4.1 // indirect
-	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
 	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20220630143837-2104d58473e0 // indirect

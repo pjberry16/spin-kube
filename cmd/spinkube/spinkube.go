@@ -8,15 +8,15 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/fatih/color"
-	"github.com/pjberry16/spin-kube/pkg/command"
 	cli "github.com/urfave/cli/v3"
+
+	. "github.com/pjberry16/spin-kube/internal/util"
+	"github.com/pjberry16/spin-kube/pkg/command"
 )
 
 var (
 	spinnakerURL = GetEnv("SPINNAKER_URL", "")
 	app          *cli.Command
-	red          = color.New(color.FgRed, color.Bold).SprintFunc()
 )
 
 func main() {
@@ -38,7 +38,7 @@ func init() {
 	app.Usage = "A CLI tool for diagnosing Kubernetes deployment failures triggered by Spinnaker"
 	app.ExitErrHandler = func(context context.Context, app *cli.Command, err error) {
 		if err != nil {
-			fmt.Println(red("FAILED"))
+			fmt.Println(Red("FAILED"))
 			fmt.Println(err.Error())
 		}
 
